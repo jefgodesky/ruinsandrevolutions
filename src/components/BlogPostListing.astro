@@ -1,0 +1,9 @@
+---
+import BlogPostHeader from './BlogPostHeader.astro';
+const { frontmatter, url } = Astro.props
+---
+<article>
+  <BlogPostHeader frontmatter={frontmatter} url={url} level="h2" />
+  <p>{frontmatter.description}</p>
+  <p><a href={url}>Read more&hellip;</a></p>
+</article>

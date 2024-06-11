@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogPostListing from '../components/BlogPostListing.astro'
+const posts = await Astro.glob('../pages/posts/*.md')
 ---
 
 <BaseLayout title="Ruins & Revolutions Blog">
 	<h1>Blog</h1>
+	{posts.map(post => <BlogPostListing url={post.url} frontmatter={post.frontmatter} />)}
 </BaseLayout>

@@ -4,6 +4,7 @@ title: "What is Ruins & Revolutions?"
 pubDate: 2024-06-11
 description: "Or, why the world does, in fact, need another tabletop roleplaying game."
 author: "Jason Godesky"
+tags: ["fiction-first gaming", "orality"]
 ---
 
 The short version is: _Ruins &amp; Revolutions_ is an ultra-light

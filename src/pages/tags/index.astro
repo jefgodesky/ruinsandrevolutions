@@ -1,0 +1,23 @@
+---
+import getTags from '../../utils/get-tags'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+const posts = await Astro.glob('../posts/*.md')
+const uniqueTags = getTags(posts)
+
+const tagDictionary = {}
+for (const tag of uniqueTags) {
+  tagDictionary[tag] = 0
+}
+
+for (const post of posts) {
+  for (const tag of post.frontmatter?.tags ?? []) {
+    tagDictionary[tag]++
+  }
+}
+---
+<BaseLayout title="Tag Index">
+  <h1>Tag Index</h1>
+  <ul>
+    {uniqueTags.map(tag => <li><a href={`/tags/${tag}`}>{tag}</a> ({tagDictionary[tag]} {tagDictionary[tag] === 1 ? 'post' : 'posts'})</li>)}
+  </ul>
+</BaseLayout>
