@@ -1,0 +1,17 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const { frontmatter } = Astro.props
+const pubDate = new Date(frontmatter.pubDate)
+const readablePubDate = pubDate.toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+---
+
+<BaseLayout title={frontmatter.title}>
+  <header>
+    <h1>{frontmatter.title}</h1>
+    <p>
+      <span rel="author">{frontmatter.author}</span> /
+      <time pubdate datetime={pubDate}>{readablePubDate}</time>
+    </p>
+  </header>
+  <slot />
+</BaseLayout>
