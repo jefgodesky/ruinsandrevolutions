@@ -41,7 +41,7 @@ game state, until we reach some final state. Every game has its own, unique
 gameplay loop, but this is the defining shape: what I’ll be calling “the
 black loop,” in reference to Sugarbaker’s illustration.
 
-![“The black loop,” Mike Sugarbaker’s illustration of the interactive loop between rules and game state prior to roleplaying games](../../assets/what-is-rnr-black-circle.gif)
+![“The black loop,” Mike Sugarbaker’s illustration of the interactive loop between rules and game state prior to roleplaying games](../../assets/posts/what-is-rnr/black-loop.gif)
 
 You _can_ make up a story in these games — _anything_ can become a
 “roleplaying game” in this sense if you want it to be — but the critical
@@ -57,14 +57,14 @@ could affect game state. This added a new, narrative loop to the gameplay
 loop: what I’ll be calling “the green loop,” one again in reference to
 Sugarbaker’s illustration.
 
-![“The green loop,” Mike Sugarbaker's illustration of the narrative loop that the first roleplaying games added to the traditional game loop](../../assets/what-is-rnr-sm-green-circle.gif)
+![“The green loop,” Mike Sugarbaker's illustration of the narrative loop that the first roleplaying games added to the traditional game loop](../../assets/posts/what-is-rnr/sm-green-loop.gif)
 
 Of course, once you’ve added a new loop like this, there’s nothing
 _requiring_ it to remain secondary to the original. It can become the
 _primary_ game loop, with the original gameplay loop of moves and game
 states becoming less prominent.
 
-![The green loop can become the dominant loop, with the black loop becoming the smaller one](../../assets/what-is-rnr-lg-green-circle.gif)
+![The green loop can become the dominant loop, with the black loop becoming the smaller one](../../assets/posts/what-is-rnr/lg-green-loop.gif)
 
 Twelve years ago, when Sugarbaker wrote this article, there was some debate
 in some circles of the internet (circles where I spent some time lurking and
