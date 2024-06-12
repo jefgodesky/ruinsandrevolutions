@@ -30,9 +30,8 @@
   }
 
   svg {
-    @include mixins.set-style("fill", "fg");
-
     .rays {
+      @include mixins.set-style("fill", "fg");
       transition: transform 0.5s ease-in-out;
     }
   }
