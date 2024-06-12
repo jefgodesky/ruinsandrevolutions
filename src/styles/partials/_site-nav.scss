@@ -1,0 +1,22 @@
+@use "../modules/mixins";
+@use "../modules/placeholders";
+
+.site-nav {
+  font-family: 'Alegreya SC', serif;
+  font-weight: 600;
+  text-align: center;
+
+  ul {
+    @extend %unstyled-list;
+
+    li {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    a {
+      @include mixins.set-style("color", "fg");
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+%layout {
+  margin: 0 auto;
+  max-width: calc(50rem - (4rem * 2));
+  padding: 2rem 4rem;
+}
+
+%unstyled-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

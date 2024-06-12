@@ -1,12 +1,37 @@
 @use "modules/mixins";
+@use "modules/placeholders";
 
 @use "./partials/fonts";
 @use "./partials/links";
 @use "./partials/images";
 @use "./partials/themed-images";
 @use "./partials/theme-toggle";
+@use "./partials/site-nav";
+
+html {
+  @media (min-width: 60rem) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: 70rem) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 80rem) {
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: 90rem) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 100rem) {
+    font-size: 1.5rem;
+  }
+}
 
 body {
+  @extend %layout;
   @include mixins.set-style("background-color", "bg");
   @include mixins.set-style("color", "fg");
 }
