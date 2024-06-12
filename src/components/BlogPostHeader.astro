@@ -5,9 +5,9 @@ const pubDate = new Date(frontmatter.pubDate)
 const readablePubDate = pubDate.toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
 const HeadingTag = level
 ---
-<header>
-  <HeadingTag>{url ? (<a href={url}>{title}</a>) : title}</HeadingTag>
-  <p>
+<header class="blog-post">
+  <HeadingTag class="blog-post-title">{url ? (<a href={url}>{title}</a>) : title}</HeadingTag>
+  <p class="byline">
     <span rel="author">{frontmatter.author}</span> /
     <time pubdate datetime={pubDate}>{readablePubDate}</time>
   </p>

@@ -1,0 +1,11 @@
+.byline {
+  font-family: 'Alegreya SC', serif;
+}
+
+.blog-post-title + .byline {
+  margin-top: 0;
+}
+
+.blog-post-title:has(+ .byline) {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,10 @@
+@use "../modules/mixins";
+
+.blog-post-title a {
+  @include mixins.set-style("color", "fg");
+  text-decoration: none;
+}
+
+header.blog-post + main {
+  margin-top: 3rem;
+}
