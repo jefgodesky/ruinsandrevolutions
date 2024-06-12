@@ -5,13 +5,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 const posts = await getCollection('posts')
 const uniqueTags = getTags(posts)
 
-const tagDictionary = {}
+const tagDictionary: { [key: string]: number } = {}
 for (const tag of uniqueTags) {
   tagDictionary[tag] = 0
 }
 
 for (const post of posts) {
-  for (const tag of post.frontmatter?.tags ?? []) {
+  for (const tag of post.data?.tags ?? []) {
     tagDictionary[tag]++
   }
 }
