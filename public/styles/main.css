@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 2rem 4rem;
+}
+
+nav.tags ul, .site-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Alegreya SC", serif;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Alegreya SC", serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: "Alegreya", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+a {
+  color: #0b51c1;
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #87ace8;
+  }
+}
+[data-theme=light] a {
+  color: #0b51c1;
+}
+[data-theme=dark] a {
+  color: #87ace8;
+}
+a:visited {
+  color: #870bc1;
+}
+@media (prefers-color-scheme: dark) {
+  a:visited {
+    color: #c987e8;
+  }
+}
+[data-theme=light] a:visited {
+  color: #870bc1;
+}
+[data-theme=dark] a:visited {
+  color: #c987e8;
+}
+a:hover {
+  color: #4286f4;
+}
+@media (prefers-color-scheme: dark) {
+  a:hover {
+    color: #d2e0f9;
+  }
+}
+[data-theme=light] a:hover {
+  color: #4286f4;
+}
+[data-theme=dark] a:hover {
+  color: #d2e0f9;
+}
+a:active {
+  color: #a40a38;
+}
+@media (prefers-color-scheme: dark) {
+  a:active {
+    color: #e887a4;
+  }
+}
+[data-theme=light] a:active {
+  color: #a40a38;
+}
+[data-theme=dark] a:active {
+  color: #e887a4;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 75%;
+  font-style: italic;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  width: 50%;
+}
+
+.themed-image.dark {
+  display: none;
+  visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .themed-image.light {
+    display: none;
+    visibility: hidden;
+  }
+  .themed-image.dark {
+    display: block;
+    visibility: visible;
+  }
+}
+[data-theme=light] .themed-image.light {
+  display: block;
+  visibility: visible;
+}
+[data-theme=light] .themed-image.dark {
+  display: none;
+  visibility: hidden;
+}
+
+[data-theme=dark] .themed-image.light {
+  display: none;
+  visibility: hidden;
+}
+[data-theme=dark] .themed-image.dark {
+  display: block;
+  visibility: visible;
+}
+
+#theme-toggle {
+  color: #333;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  float: right;
+  text-align: left;
+}
+@media (prefers-color-scheme: dark) {
+  #theme-toggle {
+    color: #ccc;
+  }
+}
+[data-theme=light] #theme-toggle {
+  color: #333;
+}
+[data-theme=dark] #theme-toggle {
+  color: #ccc;
+}
+#theme-toggle div {
+  align-self: center;
+}
+#theme-toggle p {
+  margin: 0;
+  padding: 0;
+}
+#theme-toggle .instructions {
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+}
+#theme-toggle .theme {
+  font-family: "Alegreya", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+#theme-toggle svg .rays {
+  fill: #333;
+  transition: transform 0.5s ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+  #theme-toggle svg .rays {
+    fill: #ccc;
+  }
+}
+[data-theme=light] #theme-toggle svg .rays {
+  fill: #333;
+}
+[data-theme=dark] #theme-toggle svg .rays {
+  fill: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg .rays {
+    transform: rotate(45deg) scale(0.1);
+    transform-origin: center;
+  }
+}
+[data-theme=light] svg .rays {
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme=dark] svg .rays {
+  transform: rotate(45deg) scale(0.1);
+  transform-origin: center;
+}
+
+.site-nav {
+  font-family: "Alegreya SC", serif;
+  font-weight: 600;
+  text-align: center;
+}
+.site-nav ul li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.site-nav ul a {
+  color: #333;
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  .site-nav ul a {
+    color: #ccc;
+  }
+}
+[data-theme=light] .site-nav ul a {
+  color: #333;
+}
+[data-theme=dark] .site-nav ul a {
+  color: #ccc;
+}
+
+.blog-post-title a {
+  color: #333;
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  .blog-post-title a {
+    color: #ccc;
+  }
+}
+[data-theme=light] .blog-post-title a {
+  color: #333;
+}
+[data-theme=dark] .blog-post-title a {
+  color: #ccc;
+}
+
+header.blog-post + main {
+  margin-top: 3rem;
+}
+
+.byline {
+  font-family: "Alegreya SC", serif;
+}
+
+.blog-post-title + .byline {
+  margin-top: 0;
+}
+
+.blog-post-title:has(+ .byline) {
+  margin-bottom: 0.5rem;
+}
+
+nav.tags p {
+  font-family: "Alegreya SC", serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+nav.tags li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+nav.tags a,
+nav.tags a:visited {
+  color: #555;
+  font-family: "Alegreya SC", serif;
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  nav.tags a,
+  nav.tags a:visited {
+    color: #aaa;
+  }
+}
+[data-theme=light] nav.tags a,
+[data-theme=light] nav.tags a:visited {
+  color: #555;
+}
+[data-theme=dark] nav.tags a,
+[data-theme=dark] nav.tags a:visited {
+  color: #aaa;
+}
+nav.tags a:before,
+nav.tags a:visited:before {
+  content: "#";
+}
+
+@media (min-width: 60rem) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 70rem) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 80rem) {
+  html {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 90rem) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 100rem) {
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.25s ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+  }
+}
+[data-theme=light] body {
+  background-color: #fff;
+}
+[data-theme=dark] body {
+  background-color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ccc;
+  }
+}
+[data-theme=light] body {
+  color: #333;
+}
+[data-theme=dark] body {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=main.css.map */

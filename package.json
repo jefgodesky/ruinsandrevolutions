@@ -3,9 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npm-run-all -p dev:sass dev:astro",
+    "dev:astro": "astro dev",
+    "dev:sass": "sass --watch src/styles/global.scss public/styles/main.css",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "npm-run-all build:sass build:astro",
+    "build:astro": "astro check && astro build",
+    "build:sass": "sass src/styles/global.scss public/styles/main.css --no-source-map",
     "preview": "astro preview",
     "astro": "astro"
   },
