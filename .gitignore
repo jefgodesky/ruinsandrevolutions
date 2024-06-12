@@ -1,5 +1,6 @@
 # build output
 dist/
+public/styles/main.css
 # generated types
 .astro/
 
