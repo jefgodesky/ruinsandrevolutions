@@ -1,0 +1,30 @@
+@use "../modules/mixins";
+@use "../modules/placeholders";
+
+nav.tags {
+  p {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    @extend %unstyled-list;
+  }
+
+  li {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+
+  a,
+  a:visited {
+    @include mixins.set-style("color", "fg-subdued");
+    font-family: 'Alegreya SC', serif;
+    text-decoration: none;
+
+    &:before {
+      content: '#';
+    }
+  }
+}
