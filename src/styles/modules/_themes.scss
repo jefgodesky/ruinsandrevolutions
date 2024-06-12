@@ -1,0 +1,22 @@
+$themes: (
+  "light": (
+    "bg": #fff,
+    "fg": #333,
+    "links": (
+      "base": #0b51c1,
+      "hover": #4286f4,
+      "active": #a40a38,
+      "visited": #870bc1
+    )
+  ),
+  "dark": (
+    "bg": #000,
+    "fg": #ccc,
+    "links": (
+      "base": #87ace8,
+      "hover": #d2e0f9,
+      "active": #e887a4,
+      "visited": #c987e8
+    )
+  )
+)

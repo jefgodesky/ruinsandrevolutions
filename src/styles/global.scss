@@ -1,2 +1,12 @@
+@use "modules/mixins";
+
 @use "./partials/fonts";
+@use "./partials/links";
 @use "./partials/images";
+@use "./partials/themed-images";
+@use "./partials/theme-toggle";
+
+body {
+  @include mixins.set-style("background-color", "bg");
+  @include mixins.set-style("color", "fg");
+}

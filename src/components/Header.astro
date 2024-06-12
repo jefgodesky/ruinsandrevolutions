@@ -1,11 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import logoBlack from '../assets/logo.black.png';
-import Navigation from '../components/Navigation.astro';
+import logoBlack from '../assets/logo.black.png'
+import logoWhite from '../assets/logo.white.png'
+import Navigation from './Navigation.astro'
+import ThemedImage from './ThemedImage.astro'
+import ThemeToggle from './ThemeToggle.astro'
 ---
 <header>
+  <ThemeToggle />
   <a href="/">
-    <Image src={logoBlack} alt="Ruins & Revolutions" />
+    <ThemedImage light={logoBlack} dark={logoWhite} alt="Ruins & Revolutions" />
   </a>
   <Navigation />
 </header>

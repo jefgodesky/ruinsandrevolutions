@@ -1,0 +1,50 @@
+@use "../modules/mixins";
+
+#theme-toggle {
+  @include mixins.set-style("color", "fg");
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  text-align: left;
+
+  div {
+    align-self: center;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .instructions {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 700;
+  }
+
+  .theme {
+    font-family: 'Alegreya', serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  svg {
+    @include mixins.set-style("fill", "fg");
+
+    .rays {
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @include mixins.sunset();
+}
+
+[data-theme="light"] {
+  @include mixins.sunrise();
+}
+
+[data-theme="dark"] {
+  @include mixins.sunset();
+}

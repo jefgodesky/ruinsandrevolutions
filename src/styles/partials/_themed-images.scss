@@ -1,0 +1,40 @@
+.themed-image.dark {
+  display: none;
+  visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .themed-image.light {
+    display: none;
+    visibility: hidden;
+  }
+
+  .themed-image.dark {
+    display: block;
+    visibility: visible;
+  }
+}
+
+[data-theme="light"] {
+  .themed-image.light {
+    display: block;
+    visibility: visible;
+  }
+
+  .themed-image.dark {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+[data-theme="dark"] {
+  .themed-image.light {
+    display: none;
+    visibility: hidden;
+  }
+
+  .themed-image.dark {
+    display: block;
+    visibility: visible;
+  }
+}

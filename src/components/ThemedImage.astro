@@ -1,0 +1,7 @@
+---
+import { Image } from 'astro:assets'
+const { light, dark, alt } = Astro.props
+---
+
+<Image src={light} alt={alt} class="themed-image light" />
+<Image src={dark} alt={alt} class="themed-image dark" />
