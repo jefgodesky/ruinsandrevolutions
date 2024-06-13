@@ -1,8 +1,7 @@
 ---
 const { frontmatter, url, level = 'h1' } = Astro.props
-const { title } = frontmatter
-const pubDate = new Date(frontmatter.pubDate)
-const readablePubDate = pubDate.toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+const { title, pubDate } = frontmatter
+const readablePubDate = pubDate.toLocaleDateString('en-us', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
 const HeadingTag = level
 ---
 <header class="blog-post">
