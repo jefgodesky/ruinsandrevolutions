@@ -11,6 +11,7 @@
 @use "./partials/blog-post-title";
 @use "./partials/byline";
 @use "./partials/tags";
+@use "./partials/footer";
 
 html {
   @media (min-width: 60rem) {

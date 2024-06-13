@@ -1,0 +1,26 @@
+@use "../modules/mixins";
+
+body > footer {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.rss,
+.rss:visited {
+  @include mixins.set-style("color", "fg-subdued");
+  font-family: 'Alegreya SC', serif;
+  text-decoration: none;
+
+  img {
+    display: inline-block;
+    height: 1rem;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+    width: 1rem;
+  }
+
+  div {
+    align-self: center;
+  }
+}

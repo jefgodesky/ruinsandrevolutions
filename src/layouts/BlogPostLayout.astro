@@ -6,9 +6,11 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <BlogPostHeader frontmatter={frontmatter}></BlogPostHeader>
-  <main>
-    <slot />
-  </main>
-  <BlogPostFooter tags={frontmatter.tags}></BlogPostFooter>
+  <article>
+    <BlogPostHeader frontmatter={frontmatter}></BlogPostHeader>
+    <main>
+      <slot />
+    </main>
+    <BlogPostFooter tags={frontmatter.tags}></BlogPostFooter>
+  </article>
 </BaseLayout>
